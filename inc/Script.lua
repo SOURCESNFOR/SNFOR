@@ -82,7 +82,7 @@ end
 
 function BesoJoinChannel(msg)
 if redis:get(snfor..'4DaySleep') then
-local url , res = https.request("https://api.telegram.org/bot"..token.."/getchatmember?chat_id=@Spirta&user_id="..msg.sender_user_id_);
+local url , res = https.request("https://api.telegram.org/bot"..token.."/getchatmember?chat_id=@SOURCESNFOR&user_id="..msg.sender_user_id_);
 if res ~= 200 then
 end
 Joinchanel = json:decode(url)
